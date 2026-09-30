@@ -2,14 +2,11 @@
 
 @theme {
   --font-sans: "Plus Jakarta Sans", ui-sans-serif, system-ui, sans-serif;
-  --font-serif: "Playfair Display", ui-serif, Georgia, serif;
-  --color-navy: #0b2748;
-  --color-navy-deep: #071a33;
-  --color-ink: #102a43;
-  --color-muted: #5b6b7c;
-  --color-brand: #f97316;
-  --color-brand-dark: #ea580c;
-  --color-page: #f7f8fa;
+  --font-serif: "Playfair Display", "Cormorant Garamond", Georgia, serif;
+}
+
+html {
+  scroll-behavior: smooth;
 }
 
 html,
@@ -20,8 +17,8 @@ body,
 
 body {
   margin: 0;
-  background: #ffffff;
-  color: var(--color-ink);
+  background: #fcfbf9;
+  color: #1c1917;
   font-family: var(--font-sans);
   -webkit-font-smoothing: antialiased;
 }
@@ -33,10 +30,13 @@ input {
 }
 
 .scrollbar-thin::-webkit-scrollbar {
-  height: 6px;
-  width: 6px;
+  height: 5px;
+  width: 5px;
 }
 .scrollbar-thin::-webkit-scrollbar-thumb {
-  background: #cdd5de;
+  background: #d6d3d1;
   border-radius: 99px;
+}
+.scrollbar-thin::-webkit-scrollbar-track {
+  background: #f5f5f4;
 }
